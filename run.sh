@@ -3,7 +3,7 @@
 set -e
 
 if [ "$1" = 'consumer' ]; then
-  java -ea -Dsecor_group=${SECOR_GROUP} \
+  java -ea -Dsecor.kafka.group=${SECOR_GROUP} \
 	-Daws.access.key=${AWS_ACCESS_KEY} \
 	-Daws.secret.key=${AWS_SECRET_KEY} \
 	-Dzookeeper.quorum=${ZK_QUORUM} \
