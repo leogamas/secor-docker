@@ -16,6 +16,8 @@ if [ "$1" = 'consumer' ]; then
 	-Dsecor.message.parser.class=${MESSAGE_PARSER_CLASS} \
 	-Dmessage.timestamp.name=${TS_NAME} \
 	-Dsecor.local.path=${LOCAL_PATH} \
+	-Dsecor.file.reader.writer.factory=${READER_WRITER_FACTORY} \
+	-Dsecor.compression.codec=${COMPRESSION_CODEC} \
 	-Dlog4j.configuration=log4j.prod.properties \
 	-Dconfig=secor.prod.backup.properties \
 	-cp secor-0.1-SNAPSHOT.jar:lib/* \
